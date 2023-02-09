@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: ${(props) => props.theme['purple-800']};
+    color: ${(props) => props.theme['white']};
   }
 
   body, input-security, textarea, button {
