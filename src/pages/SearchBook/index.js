@@ -1,9 +1,11 @@
 import { Footer } from "../../components/Footer";
+import { SearchForm } from "../../components/SearchForm";
 import { BookListComponents, BookRecord } from "./styles";
 
-export function BookList() {
+export function SearchBook() {
     return (
         <BookListComponents>
+            <SearchForm />
             <BookRecord>
                 <div>
                     <img src="https://m.media-amazon.com/images/I/51zhRn-CtUL.jpg" alt=""/>

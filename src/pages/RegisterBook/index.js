@@ -35,7 +35,7 @@ export function RegisterBook() {
                 />
                 <button>Cadastrar</button>
             </div>
-            <NavLink className="navLink" to="/booklist" title="booklist">
+            <NavLink className="navLink" to="/searchbook" title="booklist">
                 <button className="button"><MagnifyingGlass size={20} />Procurar livro</button>
             </NavLink>
             <Footer />
