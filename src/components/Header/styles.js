@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
 
     img {
         width: 15rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     div {

@@ -5,7 +5,7 @@ export const BookComponents = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     .registerBook {
         display: flex;
@@ -13,7 +13,7 @@ export const BookComponents = styled.div`
 
         input {
             width: 20rem;
-            height: 2rem;
+            height: 2.5rem;
             border: 0;
             border-radius: 8px;
             margin-bottom: 1rem;
@@ -28,17 +28,22 @@ export const BookComponents = styled.div`
 
         button {
             width: 20rem;
-            height: 2rem;
+            height: 2.5rem;
             border: 0;
             border-radius: 8px;
             box-shadow: 3px -3px 2px black;
             margin-top: 0.75rem;
             background: ${(props) => props.theme['green-300']};
-            font-size: 1rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: ${(props) => props.theme['white']};
             cursor: pointer;
         }
+
+        button:hover {
+        background: ${(props) => props.theme['green-400']};
+        transition: 0.2s;
+    }
     }
 
     .button {
@@ -47,7 +52,7 @@ export const BookComponents = styled.div`
         border: 0;
         margin-top: 0.75rem;
         background: ${(props) => props.theme['orange-200']};
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 700;
         color: ${(props) => props.theme['white']};
         cursor: pointer;
@@ -60,5 +65,10 @@ export const BookComponents = styled.div`
         position: fixed;
         bottom: 2.5rem;
         z-index: 1;
+    }
+
+    .button:hover {
+        background: ${(props) => props.theme['orange-300']};
+        transition: 0.2s;
     }
 `

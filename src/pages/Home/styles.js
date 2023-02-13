@@ -7,13 +7,13 @@ export const HomeComponents = styled.div`
 
     button {
         width: 20rem;
-        height: 2rem;
+        height: 2.5rem;
         border: 0;
         border-radius: 8px;
         box-shadow: 3px -3px 2px black;
         margin-top: 0.75rem;
         background: ${(props) => props.theme['green-300']};
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 700;
         color: ${(props) => props.theme['white']};
         cursor: pointer;

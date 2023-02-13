@@ -14,9 +14,14 @@ export const FooterComponents = styled.div`
         border: 0;
         margin-top: 0.75rem;
         background: ${(props) => props.theme['green-300']};
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 700;
         color: ${(props) => props.theme['white']};
         cursor: pointer;
+    }
+
+    button:hover {
+        background: ${(props) => props.theme['green-400']};
+        transition: 0.2s;
     }
 `

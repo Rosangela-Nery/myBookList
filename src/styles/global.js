@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    width: 100%;
     background: ${(props) => props.theme['purple-800']};
     color: ${(props) => props.theme['white']};
   }
