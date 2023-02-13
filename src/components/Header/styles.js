@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
     height: 10rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 1rem;
 
     img {
         width: 15rem;
+        margin-top: 2rem;
     }
 
     div {
@@ -25,5 +26,10 @@ export const HeaderContainer = styled.header`
             border-radius: 100%;
             margin-top: 20px;
         }
+    }
+
+    @media screen and (max-width: 800px) {
+        display: flex;
+        justify-content: space-between;
     }
 `
