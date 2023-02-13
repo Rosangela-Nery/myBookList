@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+    width: 100%;
     height: 10rem;
     display: flex;
     justify-content: center;
     padding: 0 1rem;
+    background: ${(props) => props.theme['purple-800']};
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    gap: 1rem;
 
     img {
         width: 15rem;

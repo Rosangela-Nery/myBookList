@@ -1,14 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import { DefaultLayout } from "./layouts/DefaultLayout";
-import { Book } from "./pages/Book";
+import { RegisterBook } from "./pages/RegisterBook";
 import { Home } from "./pages/Home";
+import { BookList } from "./pages/BookList";
 
 export function Router() {
     return (
         <Routes>
             <Route path="/" element={<DefaultLayout />}>
                 <Route path="/" element={<Home />} />
-                <Route path="/book" element={<Book />} />
+                <Route path="/registerbook" element={<RegisterBook />} />
+                <Route path="/booklist" element={<BookList/>} />
             </Route>
         </Routes>
     )

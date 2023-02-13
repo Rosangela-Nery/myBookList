@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const BookComponents = styled.div`
+export const RegisterBookComponents = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 12rem;
 
     .registerBook {
         display: flex;
@@ -46,6 +46,13 @@ export const BookComponents = styled.div`
     }
     }
 
+    .navLink {
+        position: fixed;
+        bottom: 2.5rem;
+        z-index: 1;
+        text-decoration: none;
+    }
+
     .button {
         width: 100vh;
         height: 2.5rem;
@@ -61,10 +68,6 @@ export const BookComponents = styled.div`
         gap: 0.3rem;
         justify-content: center;
         align-items: center;
-
-        position: fixed;
-        bottom: 2.5rem;
-        z-index: 1;
     }
 
     .button:hover {

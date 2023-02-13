@@ -1,10 +1,11 @@
 import { MagnifyingGlass } from "phosphor-react";
+import { NavLink } from "react-router-dom";
 import { Footer } from "../../components/Footer";
-import { BookComponents } from "./styles";
+import { RegisterBookComponents } from "./styles";
 
-export function Book() {
+export function RegisterBook() {
     return (
-        <BookComponents>
+        <RegisterBookComponents>
             <div className="registerBook">
                 <input
                     type="text"
@@ -34,8 +35,10 @@ export function Book() {
                 />
                 <button>Cadastrar</button>
             </div>
-            <button className="button"><MagnifyingGlass size={20} />Procurar livro</button>
+            <NavLink className="navLink" to="/booklist" title="booklist">
+                <button className="button"><MagnifyingGlass size={20} />Procurar livro</button>
+            </NavLink>
             <Footer />
-        </BookComponents>
+        </RegisterBookComponents>
     )
 }

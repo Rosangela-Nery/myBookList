@@ -4,6 +4,7 @@ export const HomeComponents = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10rem;
 
     button {
         width: 20rem;
@@ -29,7 +30,7 @@ export const HomeComponents = styled.div`
     }
 
     @media screen and (max-width: 800px) {
-        margin-top: 5rem;
+        margin-top: 13rem;
 
         img {
             margin-top: 4rem;

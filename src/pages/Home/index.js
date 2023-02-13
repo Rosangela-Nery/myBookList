@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 export function Home() {
     return (
         <HomeComponents>
-            <NavLink to="/book" title="Register Book">
+            <NavLink to="/registerbook" title="Register Book">
                 <button>Cadastrar livro</button>
             </NavLink>
             <button>Lista de livros para ler</button>
