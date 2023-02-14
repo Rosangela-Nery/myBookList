@@ -31,7 +31,7 @@ export const RegisterBookComponents = styled.div`
             height: 2.5rem;
             border: 0;
             border-radius: 8px;
-            box-shadow: 3px -3px 2px black;
+            box-shadow: 1px 1px 6px black;
             margin-top: 0.75rem;
             background: ${(props) => props.theme['green-300']};
             font-size: 1.25rem;
