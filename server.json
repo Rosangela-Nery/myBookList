@@ -1,0 +1,39 @@
+{
+     "bookTransactions": [
+        {
+            "id": 1,
+            "name": "Bird Box",
+            "author": "Josh Malerman",
+            "gender": "Suspense",
+            "createdAt": "2023-02-14T17:56:53.738Z"
+        },
+        {
+            "id": 2,
+            "name": "O melhor de Mim",
+            "author": "Nicholas Sparks",
+            "gender": "Romance",
+            "createdAt": "2023-02-14T17:56:53.738Z"
+        },
+        {
+            "id": 3,
+            "name": "Um Porto Seguro",
+            "author": "Nicholas Sparks",
+            "gender": "Romance",
+            "createdAt": "2023-02-14T17:56:53.738Z"
+        },
+        {
+            "id": 4,
+            "name": "Uma Longa Jornada",
+            "author": "Nicholas Sparks",
+            "gender": "Romance",
+            "createdAt": "2023-02-14T17:56:53.738Z"
+        },
+        {
+            "id": 5,
+            "name": "viagem ao centro da terra",
+            "author": "Jules Verne",
+            "gender": "Ação e aventura",
+            "createdAt": "2023-02-14T17:56:53.738Z"
+        }
+     ]
+}
