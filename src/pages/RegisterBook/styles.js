@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const RegisterBookComponents = styled.div`
+export const RegisterBookComponents = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,12 +38,17 @@ export const RegisterBookComponents = styled.div`
             font-weight: 700;
             color: ${(props) => props.theme['white']};
             cursor: pointer;
-        }
 
-        button:hover {
-        background: ${(props) => props.theme['green-400']};
-        transition: 0.2s;
-    }
+            &:disabled {
+                opacity: 0.6;
+                cursor: not-allowed;
+            }
+
+            &:not(:disabled):hover {
+                background: ${(props) => props.theme['green-400']};
+                transition: 0.2s;
+            }
+        }
     }
 
     .navLink {
@@ -68,10 +73,10 @@ export const RegisterBookComponents = styled.div`
         gap: 0.3rem;
         justify-content: center;
         align-items: center;
-    }
 
-    .button:hover {
-        background: ${(props) => props.theme['orange-300']};
-        transition: 0.2s;
+        &:hover {
+            background: ${(props) => props.theme['orange-300']};
+            transition: 0.2s;
+        }
     }
 `
