@@ -2,37 +2,50 @@
      "bookTransactions": [
         {
             "id": 1,
+            "image": "https://m.media-amazon.com/images/I/51zhRn-CtUL.jpg",
             "name": "Bird Box",
             "author": "Josh Malerman",
             "gender": "Suspense",
-            "createdAt": "2023-02-14T17:56:53.738Z"
+            "createdAt": "2023-02-02T17:56:53.738Z"
         },
         {
             "id": 2,
+            "image": "https://m.media-amazon.com/images/I/917oLDiFT+S.jpg",
             "name": "O melhor de Mim",
             "author": "Nicholas Sparks",
             "gender": "Romance",
-            "createdAt": "2023-02-14T17:56:53.738Z"
+            "createdAt": "2023-02-08T17:56:53.738Z"
         },
         {
             "id": 3,
+            "image": "https://m.media-amazon.com/images/I/91kAw3CSBzL.jpg",
             "name": "Um Porto Seguro",
             "author": "Nicholas Sparks",
             "gender": "Romance",
-            "createdAt": "2023-02-14T17:56:53.738Z"
+            "createdAt": "2023-02-10T17:56:53.738Z"
         },
         {
             "id": 4,
+            "image": "https://m.media-amazon.com/images/I/91MEkXRlNjS.jpg",
             "name": "Uma Longa Jornada",
             "author": "Nicholas Sparks",
             "gender": "Romance",
-            "createdAt": "2023-02-14T17:56:53.738Z"
+            "createdAt": "2023-02-12T17:56:53.738Z"
         },
         {
             "id": 5,
+            "image": "https://m.media-amazon.com/images/I/A1s+6nCSdmL.jpg",
             "name": "viagem ao centro da terra",
             "author": "Jules Verne",
             "gender": "Ação e aventura",
+            "createdAt": "2023-02-13T17:56:53.738Z"
+        },
+        {
+            "id": 6,
+            "image": "https://res.cloudinary.com/buzzfeed-brasil/image/upload/q_auto,f_auto/image-uploads/subbuzz-images/jpeg/aca8851aec361460ef2659d364a8ebdb.jpg",
+            "name": "Cemitério Maldito",
+            "author": "Stephen King",
+            "gender": "Terror",
             "createdAt": "2023-02-14T17:56:53.738Z"
         }
      ]
