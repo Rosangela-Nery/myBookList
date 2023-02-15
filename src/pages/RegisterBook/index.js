@@ -5,6 +5,7 @@ import { RegisterBookComponents } from "./styles";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { api } from "../../lib/axios";
 
 const registerBookSchema = z.object({
     image: z.string().url(),
@@ -14,19 +15,30 @@ const registerBookSchema = z.object({
 })
 
 export function RegisterBook() {
+
     const { 
         register,
         handleSubmit,
         formState: {
             isSubmitting
-        }
+        },
+        reset,
     } = useForm({
         resolver: zodResolver(registerBookSchema)
     })
 
     async function handleCreateNewRegisterBook(data) {
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        console.log("444444: ", data)
+        const { image, name, author, gender } = data;
+
+        await api.post('/book', {
+            image,
+            name,
+            author,
+            gender,
+            createdAt: new Date(),
+        })
+
+        reset();
     }
 
     return (

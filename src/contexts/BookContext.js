@@ -1,25 +1,30 @@
-import { useEffect, useState } from "react";
-import { createContext } from "use-context-selector";
+import { useEffect, useState, createContext } from "react";
+import { api } from "../lib/axios";
 
 export const BooksContext = createContext({});
-
 
 export function BookTransactionProvider({ children }) {
     const [transactions, setTransactions] = useState([])
 
-    async function loadTransactions() {
-        const response = await fetch('http://localhost:3005/bookTransactions');
-        const data = await response.json();
+    async function fetchBooks(query) {
+        const response = await api.get('/book', {
+            params: {
+                q: query,
+            }
+        })
 
-        setTransactions(data);
+        setTransactions(response.data);
     }
 
     useEffect(() => {
-        loadTransactions();
+        fetchBooks();
     }, [])
 
     return (
-        <BooksContext.Provider value={{ transactions }}>
+        <BooksContext.Provider value={{ 
+            transactions,
+            fetchBooks,
+        }}>
             {children}
         </BooksContext.Provider>
     )
