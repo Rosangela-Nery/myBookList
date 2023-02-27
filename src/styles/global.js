@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme['purple-800']};
     color: ${(props) => props.theme['white']};
     overflow: visible;
+    min-height: 100vh;
   }
 
   body, input-security, textarea, button {
