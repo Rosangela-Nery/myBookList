@@ -7,7 +7,7 @@ export function BookTransactionProvider({ children }) {
     const [transactions, setTransactions] = useState([])
 
     async function fetchBooks(query) {
-        const response = await api.get('/book', {
+        const response = await api.get('/bookTransactions', {
             params: {
                 q: query,
             }

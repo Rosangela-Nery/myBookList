@@ -30,7 +30,7 @@ export function RegisterBook() {
     async function handleCreateNewRegisterBook(data) {
         const { image, name, author, gender } = data;
 
-        await api.post('/book', {
+        await api.post('/bookTransactions', {
             image,
             name,
             author,
